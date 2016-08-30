@@ -1,0 +1,7 @@
+# Feed Me
+
+I'm currently restarting this project. It started off as me building off of a [Ray Wenderlich post](https://www.raywenderlich.com/109888/google-maps-ios-sdk-tutorial) during DragonHacks to learn about iOS networking and Cocoapods. However, the app was primarily the implementation described by the tutorial. The only issues I ran into were when I decided to branch out.
+
+:pizza: :hamburger:
+
+Now I want to see if I can build this application myself. If you'd like to see the original version, hop over to [this commit](https://github.com/avijeets/feed-me-ios/tree/44b87f27455cdee7d4ed53b659f560f317014c51).
