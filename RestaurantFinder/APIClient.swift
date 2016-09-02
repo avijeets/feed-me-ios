@@ -18,9 +18,29 @@ protocol JSONDecodable {
 }
 
 protocol Endpoint {
-    var baseURL: NSURL { get }
+    var baseURL: String { get }
     var path: String { get }
-    var request: NSURLRequest { get }
+    var parameters: [String: AnyObject] {  get }
+}
+
+extension Endpoint {
+    var queryComponents: [NSURLQueryItem] {
+        var components = [NSURLQueryItem]()
+        
+        for (k, v) in parameters {
+            let queryItem = NSURLQueryItem(name: k, value: "\(v)")
+        }
+        
+        return components
+    }
+    var request: NSURLRequest {
+        let components = NSURLComponents(string: baseURL)!
+        components.path = path
+        components.queryItems = queryComponents
+        
+        let url = components.URL!
+        return NSURLRequest(URL: url)
+    }
 }
 
 typealias JSON = [String: AnyObject]

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8AD13A571D76B7380035799C /* FoursquareClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD13A561D76B7380035799C /* FoursquareClient.swift */; };
+		8AD13A591D76B87C0035799C /* FoursquareModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD13A581D76B87C0035799C /* FoursquareModels.swift */; };
 		9724C68B1CDAA25B00269D61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9724C68A1CDAA25B00269D61 /* AppDelegate.swift */; };
 		9724C68D1CDAA25B00269D61 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9724C68C1CDAA25B00269D61 /* MasterViewController.swift */; };
 		9724C68F1CDAA25B00269D61 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9724C68E1CDAA25B00269D61 /* DetailViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8AD13A561D76B7380035799C /* FoursquareClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareClient.swift; sourceTree = "<group>"; };
+		8AD13A581D76B87C0035799C /* FoursquareModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareModels.swift; sourceTree = "<group>"; };
 		9724C6871CDAA25B00269D61 /* RestaurantFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9724C68A1CDAA25B00269D61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9724C68C1CDAA25B00269D61 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8AD13A5A1D76B88A0035799C /* Foursquare */ = {
+			isa = PBXGroup;
+			children = (
+				8AD13A561D76B7380035799C /* FoursquareClient.swift */,
+				8AD13A581D76B87C0035799C /* FoursquareModels.swift */,
+			);
+			name = Foursquare;
+			sourceTree = "<group>";
+		};
 		9724C67E1CDAA25B00269D61 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +75,7 @@
 				9724C68C1CDAA25B00269D61 /* MasterViewController.swift */,
 				9724C68E1CDAA25B00269D61 /* DetailViewController.swift */,
 				9724C69E1CDAA27B00269D61 /* APIClient.swift */,
+				8AD13A5A1D76B88A0035799C /* Foursquare */,
 				9724C6901CDAA25B00269D61 /* Main.storyboard */,
 				9724C6931CDAA25B00269D61 /* Assets.xcassets */,
 				9724C6951CDAA25B00269D61 /* LaunchScreen.storyboard */,
@@ -141,8 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AD13A591D76B87C0035799C /* FoursquareModels.swift in Sources */,
 				9724C68F1CDAA25B00269D61 /* DetailViewController.swift in Sources */,
 				9724C68D1CDAA25B00269D61 /* MasterViewController.swift in Sources */,
+				8AD13A571D76B7380035799C /* FoursquareClient.swift in Sources */,
 				9724C68B1CDAA25B00269D61 /* AppDelegate.swift in Sources */,
 				9724C69F1CDAA27B00269D61 /* APIClient.swift in Sources */,
 			);
@@ -294,6 +310,7 @@
 				9724C69D1CDAA25B00269D61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
